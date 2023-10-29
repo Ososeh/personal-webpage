@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up Page</title>
+    <link rel="stylesheet" href="./form styles/style.css">
   </head>
   <body>
+    <div class="row">
+      <img src="./images/croppedAltSchool-Logo.png",
+      </div>
     <h1>Application Form</h1>
-    <br />
     <p>Fill in your details.</p>
     <form action="/signup">
       <label for="fname">First name:</label>
@@ -68,6 +71,7 @@
       </select>
       <label for="course-select">Choose Course of Study:</label>
       <select name="course-select">
+        <option value=""disabled>Select Course</option>
         <option value="">Frontend Engineering</option>
         <option value="">Backend Engineering</option>
         <option value="">Cloud Engineering</option>
@@ -111,7 +115,9 @@
       </p>
 
       <br />
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit"/>
+
+      <p>Already have an account? <a href="./index.html">Sign in</a></p>
     </form>
   </body>
 </html>
