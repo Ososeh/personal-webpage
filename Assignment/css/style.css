@@ -1,0 +1,13 @@
+* {
+  max-width: 500px;
+  margin: auto;
+}
+.h1{
+ line-height:2.5 ;
+}
+.h2{
+line-height: 2.5;
+}
+.p{
+line-height: 1.8;
+}
