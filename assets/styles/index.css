@@ -1,0 +1,188 @@
+/* ELement Selectors
+p{
+   color: blue;
+   font-size: 20px; 
+}*/
+/*ID Selector
+#footer{
+    font-size: 10px;
+    color: aqua;
+}*/
+/*Class Selector
+.title{
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: underline;
+}*/
+
+:root {
+  --border-color: #ddd;
+}
+
+html,
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 20px;
+  text-decoration: underline;
+}
+header {
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+}
+
+nav a {
+  margin: 0 10px;
+}
+
+.nav,
+.main {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.main {
+  padding: 0 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/*Flex display*/
+.flex {
+  display: flex;
+  gap: 15px;
+}
+
+/*Flexbox sizing*/
+.flex-item {
+  flex: 1;
+}
+
+.grid-cell,
+.flex-item {
+  height: 200px;
+  background-color: gray;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+}
+
+/** CSS Animation **/
+.animate {
+  animation-name: slidein;
+  animation-duration: 3s;
+  /**animation-iteration-count: infinite;**/
+}
+/** Keyframe **/
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 190%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/**  Styling on Mobile Devices  **/
+@media (max-width: 540px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+/*Inline flex display
+.flex-container {
+    display: inline-flex;
+}
+*/
+
+/*Flex direction
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row-reverse;
+}
+*/
+
+/*Flex wrap
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+*/
+
+/*Or use the flex-flow shorthand
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+*/
+
+/*Flexible sizing with min size set
+.flex-item {
+    flex: 1 200px;
+}
+*/
+
+/*Flexbox alignment
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+*/
+
+/*Flexbox align-self
+.flex-item:first-child {
+    align-self: flex-end;
+}
+*/
+
+/*Flexbox ordering
+.flex-item:first-child {
+    order: 3;
+}
+*/
+
+/**  Styling on Mobile Devices  **/
+/* Target print devices
+@media print { ... } 
+*/
+/* Target screen and print devices 
+@media screen, print { ... }
+*/
+/* Target specific viewport sizes 
+@media (max-width: 768px) { ... }
+*/
+/* Combine type and/or features 
+@media (min-width: 30em) and (orientation: landscape) { ... }
+*/
+
+/** CSS Animation **/
+/* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state |
+name 
+animation: 3s eas-in 1s 2 reverse both paused slidein;
+*/
+/* @keyframes name | duration | easing-function | delay 
+animation: slidein 3s linear 1s;
+*/
+/* @keyframes name | duration 
+animation: slidein 3s; 
+*/
